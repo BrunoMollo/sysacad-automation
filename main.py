@@ -2,12 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
-# completar las siguientes variables
+# Completar las siguientes variables
 LEGAJO = 47773
 PASSWORD = ""
-MATERIA = ""  # No es necesrio que sea el nombre completo, puede ser un nombre parcial
-POS = 1  # posicion de la opcion (arrancando en 1) de arriba par abajo. Si una comision s equeda sin cupos puede pasar cualquier cosa
-
+MATERIA = ""  # No es necesario que sea el nombre completo, puede ser un nombre parcial
+POS = 1  # posicion de la opcion de la comision de arriba par abajo (arrancando en 1). Si una comision se queda sin cupos puede pasar cualquier cosa
+# ----------------------------------------------------------------------------------------------------
 
 def main():
     driver = None
@@ -46,7 +46,6 @@ def main():
 
             if "cursosCursado" in driver.current_url:
                 print("Pantalla comisiones")
-                # creo que la ultima es la mañana
                 driver.find_element(By.CSS_SELECTOR, f"[value='{POS}']").click()
                 driver.save_screenshot(MATERIA + "-comision.png")
 
