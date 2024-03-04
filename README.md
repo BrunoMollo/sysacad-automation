@@ -13,7 +13,7 @@ pip install selenium
 source .venv/bin/activate
 python3 main.py
 ```
-4. Esperar a que termine. Puede parecer que salen un monton de errores, ignoralos.
+4. Esperar a que termine. Puede parecer que salen un monton de errores, ignoralos. Durante la ejecucion se van a ir sacando screen de las distintas pantallas para que veas que va ocurriendo.
 
 ## Aclaración
 Esta cosa no fue muy testeada, la arme en una hora durante la inscripcion y la probe con 3 materias de quinto nomas en 2024. 
